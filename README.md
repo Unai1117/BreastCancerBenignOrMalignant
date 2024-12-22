@@ -101,7 +101,3 @@ Las contribuciones son bienvenidas. Si deseas mejorar el proyecto o agregar nuev
    ```
 4. Envía tus cambios mediante un pull request.
 
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más información.
-

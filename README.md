@@ -60,12 +60,12 @@ Sigue estos pasos para ejecutar el notebook:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/nombre_del_proyecto.git
+   git clone https://github.com/Unai1117/BreastCancerBenignOrMalig.git
    ```
 
 2. Cambia al directorio del proyecto:
    ```bash
-   cd nombre_del_proyecto
+   cd BreastCancerBenignOrMalig
    ```
 
 3. Abre el notebook en Jupyter:

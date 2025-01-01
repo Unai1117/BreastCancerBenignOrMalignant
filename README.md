@@ -1,32 +1,32 @@
-# Predicción de Tumores con Machine Learning
+# Tumor Prediction with Machine Learning
 
-Este proyecto utiliza algoritmos de machine learning para predecir si un tumor es benigno o maligno utilizando un conjunto de datos biomédicos. Se exploran varios modelos de clasificación y se selecciona el mejor en función de su desempeño.
+This project leverages machine learning algorithms to predict whether a tumor is benign or malignant using biomedical data. Various classification models are explored, and the best-performing model is selected based on its performance.
 
-## Contenido del Proyecto
+## Project Overview
 
-El proyecto incluye los siguientes pasos:
+The project follows these steps:
 
-1. **Carga de Datos**: Descarga de un conjunto de datos de OpenML.
-2. **Exploración y Preparación de Datos**:
-   - Análisis de las dimensiones del dataset.
-   - Asignación de nombres descriptivos a las columnas.
-   - Visualización de la distribución de clases objetivo.
-3. **Entrenamiento de Modelos**:
-   - Entrenamiento y evaluación de varios modelos de clasificación:
+1. **Data Loading**: Downloading the dataset from OpenML.
+2. **Data Exploration and Preparation**:
+   - Analyzing dataset dimensions.
+   - Assigning descriptive names to columns.
+   - Visualizing the distribution of target classes.
+3. **Model Training**:
+   - Training and evaluating several classification models:
      - Random Forest
-     - Regresión Logística
+     - Logistic Regression
      - Support Vector Machine (SVM)
      - Gradient Boosting
-   - Validación cruzada para comparar el desempeño de los modelos.
-4. **Afinación de Hiperparámetros**:
-   - Uso de `GridSearchCV` para optimizar los hiperparámetros del modelo Gradient Boosting, seleccionado como el mejor modelo.
+   - Cross-validation to compare model performance.
+4. **Hyperparameter Tuning**:
+   - Using `GridSearchCV` to optimize hyperparameters of the Gradient Boosting model, selected as the best-performing model.
 
-## Requisitos
+## Requirements
 
-Para ejecutar el proyecto, necesitas las siguientes dependencias:
+To run the project, you need the following dependencies:
 
 - Python 3.7+
-- Bibliotecas de Python:
+- Python libraries:
   - `openml`
   - `pandas`
   - `numpy`
@@ -34,70 +34,74 @@ Para ejecutar el proyecto, necesitas las siguientes dependencias:
   - `seaborn`
   - `matplotlib`
 
-Puedes instalarlas ejecutando:
+Install the dependencies using:
 ```bash
 pip install openml pandas numpy scikit-learn seaborn matplotlib
 ```
 
-## Estructura del Notebook
+## Notebook Structure
 
-El proyecto está documentado en un notebook de Jupyter. La estructura principal es:
+The project is documented in a Jupyter notebook. The main structure includes:
 
-1. **Introducción**: Breve descripción del problema y objetivos.
-2. **Carga y Exploración de Datos**:
-   - Carga del dataset desde OpenML.
-   - Análisis exploratorio inicial (dimensiones, tipos de datos, distribución de clases).
-3. **Entrenamiento y Evaluación de Modelos**:
-   - Comparación de diferentes modelos mediante métricas como `precision`, `recall` y `F1-score`.
-   - Visualización de resultados con gráficos.
-4. **Optimización del Mejor Modelo**:
-   - Afinación de hiperparámetros usando GridSearchCV para mejorar la precisión del modelo Gradient Boosting.
-5. **Conclusiones**: Resumen de los resultados y próximos pasos.
+1. **Introduction**: Brief description of the problem and objectives.
+2. **Data Loading and Exploration**:
+   - Loading the dataset from OpenML.
+   - Initial exploratory analysis (dimensions, data types, class distribution).
+3. **Model Training and Evaluation**:
+   - Comparing different models using metrics such as `precision`, `recall`, and `F1-score`.
+   - Visualizing results with plots.
+4. **Best Model Optimization**:
+   - Hyperparameter tuning with GridSearchCV to improve the accuracy of the Gradient Boosting model.
+5. **Conclusions**: Summary of results and future steps.
 
-## Uso
+## Usage
 
-Sigue estos pasos para ejecutar el notebook:
+Follow these steps to run the notebook:
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/Unai1117/BreastCancerBenignOrMalig.git
+   git clone https://github.com/Unai1117/BreastCancerBenignOrMalignant.git
    ```
 
-2. Cambia al directorio del proyecto:
+2. Navigate to the project directory:
    ```bash
-   cd BreastCancerBenignOrMalig
+   cd project_name
    ```
 
-3. Abre el notebook en Jupyter:
+3. Open the notebook in Jupyter:
    ```bash
    jupyter notebook tumor_prediction.ipynb
    ```
 
-4. Ejecuta las celdas secuencialmente para reproducir el análisis y resultados.
+4. Execute the cells sequentially to reproduce the analysis and results.
 
-## Resultados
+## Results
 
-El modelo optimizado (Gradient Boosting) logró los siguientes resultados:
+The optimized model (Gradient Boosting) achieved the following results:
 
-- **Métricas principales**:
-  - Precisión: 98%
+- **Key Metrics**:
+  - Accuracy: 98%
   - Recall: 97%
   - F1-Score: 97%
 
-Puedes encontrar más detalles en la sección de afinación de hiperparámetros y en los reportes de clasificación generados por los modelos.
+Detailed insights can be found in the hyperparameter tuning section and the classification reports generated by the models.
 
-## Contribuciones
+## Contributions
 
-Las contribuciones son bienvenidas. Si deseas mejorar el proyecto o agregar nuevas funcionalidades, sigue estos pasos:
+Contributions are welcome. To improve the project or add new features, follow these steps:
 
-1. Haz un fork del repositorio.
-2. Crea una rama para tu nueva funcionalidad:
+1. Fork the repository.
+2. Create a branch for your feature:
    ```bash
-   git checkout -b nueva_funcionalidad
+   git checkout -b new_feature
    ```
-3. Realiza tus cambios y haz un commit:
+3. Commit your changes:
    ```bash
-   git commit -m "Descripción de los cambios"
+   git commit -m "Description of changes"
    ```
-4. Envía tus cambios mediante un pull request.
+4. Push your changes and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more information.
 
